@@ -3,8 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Socket", "Socket", "{C23B6064-06EC-4CD4-8498-8D9BCB9709B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketRPC.Client", "SocketRPC.Client\SocketRPC.Client.csproj", "{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketRPC.Server", "SocketRPC.Server\SocketRPC.Server.csproj", "{D8794EB5-5809-4FE7-8F9A-8A0888921624}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD} = {C23B6064-06EC-4CD4-8498-8D9BCB9709B4}
+		{D8794EB5-5809-4FE7-8F9A-8A0888921624} = {C23B6064-06EC-4CD4-8498-8D9BCB9709B4}
 	EndGlobalSection
 EndGlobal

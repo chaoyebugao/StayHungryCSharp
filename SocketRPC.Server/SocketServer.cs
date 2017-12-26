@@ -91,11 +91,11 @@ namespace SocketRPC.Server
                     //将字节转换成字符串
                     string words = Encoding.UTF8.GetString(buffer, 0, n);
 
-                    Console.WriteLine($"收到{clientSokcet.RemoteEndPoint.ToString()}消息:{words}");
-
-                    string wordsReply = "I'm here.";
+                    Console.WriteLine($"服务端收到{clientSokcet.RemoteEndPoint.ToString()}消息:【{words}】，时间:{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss,fff")}");
+                    
+                    string wordsReply = $"I'm here.{DateTime.Now.ToString("yyyy - MM - dd HH: mm: ss,fff")}";
                     var bufferReply = Encoding.UTF8.GetBytes(wordsReply);
-                    serverSocket.Send(buffer);
+                    clientSokcet.Send(bufferReply);
                 }
                 catch (Exception ex)
                 {

@@ -31,7 +31,7 @@ namespace SocketRPC.Client
                 thread.IsBackground = true;
                 thread.Start(clientSocket);
 
-                string words = "Anyone?";
+                string words = $"Anyone?{DateTime.Now.ToString("yyyy - MM - dd HH: mm: ss,fff")}";
                 var buffer = Encoding.UTF8.GetBytes(words);
                 clientSocket.Send(buffer);
             }
@@ -51,7 +51,7 @@ namespace SocketRPC.Client
                     int n = clientSocket.Receive(buffer);
                     string words = Encoding.UTF8.GetString(buffer, 0, n);
 
-                    Console.WriteLine($"收到{clientSocket.RemoteEndPoint.ToString()}消息:{words}");
+                    Console.WriteLine($"客户端收到{clientSocket.RemoteEndPoint.ToString()}消息:【{words}】，时间：{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss,fff")}");
                 }
                 catch(Exception ex)
                 {

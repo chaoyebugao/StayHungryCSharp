@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketRPC.Client", "SocketR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketRPC.Server", "SocketRPC.Server\SocketRPC.Server.csproj", "{D8794EB5-5809-4FE7-8F9A-8A0888921624}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "异步与多线程", "异步与多线程", "{622DA704-F015-41BB-AE08-BA5EA78EDA45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAndThreading", "AsyncAndThreading\AsyncAndThreading.csproj", "{CD96FA02-DC3B-4C70-817F-2D44D7D4D782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IO相关", "IO相关", "{01205E23-845D-41DF-B7BD-0F9099B5589E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndFolder", "FileAndFolder\FileAndFolder.csproj", "{74B7F1CF-EE2F-4788-8650-B117B5D04302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +31,14 @@ Global
 		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8794EB5-5809-4FE7-8F9A-8A0888921624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD96FA02-DC3B-4C70-817F-2D44D7D4D782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD96FA02-DC3B-4C70-817F-2D44D7D4D782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD96FA02-DC3B-4C70-817F-2D44D7D4D782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD96FA02-DC3B-4C70-817F-2D44D7D4D782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B7F1CF-EE2F-4788-8650-B117B5D04302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B7F1CF-EE2F-4788-8650-B117B5D04302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B7F1CF-EE2F-4788-8650-B117B5D04302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B7F1CF-EE2F-4788-8650-B117B5D04302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5BC4D37E-2D1E-461F-B5A1-86767AF31FAD} = {C23B6064-06EC-4CD4-8498-8D9BCB9709B4}
 		{D8794EB5-5809-4FE7-8F9A-8A0888921624} = {C23B6064-06EC-4CD4-8498-8D9BCB9709B4}
+		{CD96FA02-DC3B-4C70-817F-2D44D7D4D782} = {622DA704-F015-41BB-AE08-BA5EA78EDA45}
+		{74B7F1CF-EE2F-4788-8650-B117B5D04302} = {01205E23-845D-41DF-B7BD-0F9099B5589E}
 	EndGlobalSection
 EndGlobal

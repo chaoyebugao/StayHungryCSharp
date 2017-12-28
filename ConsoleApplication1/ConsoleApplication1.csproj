@@ -58,6 +58,7 @@
     <Compile Include="字符串长度\Class1.cs" />
     <Compile Include="实例中的static\StaticObjOfInstance.cs" />
     <Compile Include="对象比较\ObjEquation.cs" />
+    <Compile Include="序列化反序列化\MarshalConvert.cs" />
     <Compile Include="排序算法\冒泡算法.cs" />
     <Compile Include="整数交换\IntExt.cs" />
     <Compile Include="构造函数\ConstructorTest.cs" />

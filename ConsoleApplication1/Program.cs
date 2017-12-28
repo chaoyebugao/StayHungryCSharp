@@ -10,7 +10,23 @@ namespace ConsoleApplication1
     {
         public static void Main()
         {
-            自增.SelfPlus.Exec();
+            var r1 = "3";
+
+            switch (r1)
+            {
+                case "1":
+                    {
+                        string companyId = "sdsd1";
+                        Console.WriteLine(companyId);
+                    }
+                    break;
+                case "3":
+                    {
+                        string companyId = "sdsd3";
+                        Console.WriteLine(companyId);
+                    }
+                    break;
+            }
 
         }
 

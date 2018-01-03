@@ -1,22 +1,16 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace SerAndDeSer
 {
     class Program
     {
-
-
-        public static void Main()
+        static void Main(string[] args)
         {
-            
+            UseGoogleProtobuf.GoogleProtoBufConvert.Exec();
         }
-
     }
-
-
-
 }

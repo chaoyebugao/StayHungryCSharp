@@ -1,0 +1,24 @@
+﻿
+syntax = "proto3";
+package SerAndDeSer.UseGoogleProtobuf;
+ 
+//定义规范：
+//message类 均首字母大写   大写！！！！
+
+message ConnectUser {
+	int64 Id = 1;                 //用户ID
+	string AuthToken = 2;               //链接授权信息
+};
+ 
+//test url :   /test
+message NetRequest {         //定义一个类， 用于客户端请求
+	ConnectUser ConnUser = 1;	//链接用户信息
+	string Action = 2;
+	map<string, string> Params = 3;	//请求参数
+}
+
+message NetResponse {     //定义一个类，用于响应客户端请求
+	bool Success = 1;		//成功指示
+	string Message = 2;		//结果描述信息
+
+}

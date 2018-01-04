@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IOCUseGrace
+namespace IOCFrameworkDemo
 {
     class Program
     {
         static void Main(string[] args)
         {
+            UseGrace.GraceIOCDemo.Exec();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace ConsoleApplication1
 
         public static void Main()
         {
-            
+            枚举的First或Find返回来的是引用.ListGetOneTest.Exec();
         }
 
     }

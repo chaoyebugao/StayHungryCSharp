@@ -60,6 +60,7 @@
     <Compile Include="UseMarshal\MarshalConvert.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseNewtonSoftJson\DataTableJsonTest.cs" />
     <Compile Include="UseProtoBufNet\NetModel.cs" />
     <Compile Include="UseProtoBufNet\ProtoBufNetConvert.cs" />
   </ItemGroup>

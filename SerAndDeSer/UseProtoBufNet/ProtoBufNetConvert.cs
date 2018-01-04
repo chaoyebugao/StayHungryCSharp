@@ -12,26 +12,49 @@ namespace SerAndDeSer.UseProtoBufNet
     {
         public static void Exec()
         {
-            var m = new NetModel()
+            var req = new NetRequest()
             {
-                D1 = DateTime.Parse("2018-1-3 14:11:17"),
-                Desc = "测试测试ProtoBufNet",
-                RR = 1325,
+                Action = "GetUserInfo",
+                ConnUser = new ConnectUser()
+                {
+                    AuthToken = "testxjxjxjxj",
+                    Id = 1548778,
+                },
+            };
+            req.Params = new Dictionary<string, string>
+            {
+                { "Gavatar", "头像ID" },
             };
 
-            var mStr = Serialize<NetModel>(m);
-            Console.WriteLine(mStr);
+            var reqArray = Serialize<NetRequest>(req);
+            Console.WriteLine($"reqArray.Length:{reqArray.Length}");
+            Console.WriteLine(string.Join(",", reqArray));
             Console.WriteLine();
-            var mDes = DeSerialize<NetModel>(mStr);
+            var mDes = DeSerialize<NetRequest>(reqArray);
+        }
+
+        /// <summary>
+        /// 序列化
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="t"></param>
+        /// <returns></returns>
+        public static byte[] Serialize<T>(T t)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                Serializer.Serialize<T>(ms, t);
+                return ms.ToArray();
+            }
         }
 
         /// <summary>  
-        /// 序列化  
+        /// 序列化为文本
         /// </summary>  
         /// <typeparam name="T"></typeparam>  
         /// <param name="t"></param>  
         /// <returns></returns>  
-        public static string Serialize<T>(T t)
+        public static string SerializeToJson<T>(T t)
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -48,6 +71,21 @@ namespace SerAndDeSer.UseProtoBufNet
         public static T DeSerialize<T>(string content)
         {
             using (MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(content)))
+            {
+                T t = Serializer.Deserialize<T>(ms);
+                return t;
+            }
+        }
+
+        /// <summary>  
+        /// 反序列化  
+        /// </summary>  
+        /// <typeparam name="T"></typeparam>  
+        /// <param name="content"></param>  
+        /// <returns></returns>  
+        public static T DeSerialize<T>(byte[] content)
+        {
+            using (MemoryStream ms = new MemoryStream(content))
             {
                 T t = Serializer.Deserialize<T>(ms);
                 return t;

@@ -31,14 +31,18 @@ namespace SerAndDeSer.UseGoogleProtobuf {
             "Y3Rpb24YAiABKAkSRQoGUGFyYW1zGAMgAygLMjUuU2VyQW5kRGVTZXIuVXNl",
             "R29vZ2xlUHJvdG9idWYuTmV0UmVxdWVzdC5QYXJhbXNFbnRyeRotCgtQYXJh",
             "bXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIi8KC05l",
-            "dFJlc3BvbnNlEg8KB1N1Y2Nlc3MYASABKAgSDwoHTWVzc2FnZRgCIAEoCWIG",
-            "cHJvdG8z"));
+            "dFJlc3BvbnNlEg8KB1N1Y2Nlc3MYASABKAgSDwoHTWVzc2FnZRgCIAEoCSKq",
+            "AQoHUGJUZXN0MRIQCghNeURvdWJsZRgBIAEoARIPCgdNeUZsb2F0GAIgASgC",
+            "Eg8KB015SW50MzIYAyABKAUSEAoITXlVaW50MzIYBCABKA0SEAoITXlVaW50",
+            "NjQYBSABKAQSDgoGTXlCb29sGAYgASgIEhAKCE15U3RyaW5nGAcgASgJEg8K",
+            "B015Qnl0ZXMYCCABKAwSFAoMTXlTdHJpbmdMaXN0GAkgAygJYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::SerAndDeSer.UseGoogleProtobuf.ConnectUser), global::SerAndDeSer.UseGoogleProtobuf.ConnectUser.Parser, new[]{ "Id", "AuthToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SerAndDeSer.UseGoogleProtobuf.NetRequest), global::SerAndDeSer.UseGoogleProtobuf.NetRequest.Parser, new[]{ "ConnUser", "Action", "Params" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SerAndDeSer.UseGoogleProtobuf.NetResponse), global::SerAndDeSer.UseGoogleProtobuf.NetResponse.Parser, new[]{ "Success", "Message" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::SerAndDeSer.UseGoogleProtobuf.NetResponse), global::SerAndDeSer.UseGoogleProtobuf.NetResponse.Parser, new[]{ "Success", "Message" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SerAndDeSer.UseGoogleProtobuf.PbTest1), global::SerAndDeSer.UseGoogleProtobuf.PbTest1.Parser, new[]{ "MyDouble", "MyFloat", "MyInt32", "MyUint32", "MyUint64", "MyBool", "MyString", "MyBytes", "MyStringList" }, null, null, null)
           }));
     }
     #endregion
@@ -558,6 +562,360 @@ namespace SerAndDeSer.UseGoogleProtobuf {
           }
           case 18: {
             Message = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///测试测试
+  /// </summary>
+  public sealed partial class PbTest1 : pb::IMessage<PbTest1> {
+    private static readonly pb::MessageParser<PbTest1> _parser = new pb::MessageParser<PbTest1>(() => new PbTest1());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PbTest1> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::SerAndDeSer.UseGoogleProtobuf.NetModelReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PbTest1() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PbTest1(PbTest1 other) : this() {
+      myDouble_ = other.myDouble_;
+      myFloat_ = other.myFloat_;
+      myInt32_ = other.myInt32_;
+      myUint32_ = other.myUint32_;
+      myUint64_ = other.myUint64_;
+      myBool_ = other.myBool_;
+      myString_ = other.myString_;
+      myBytes_ = other.myBytes_;
+      myStringList_ = other.myStringList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PbTest1 Clone() {
+      return new PbTest1(this);
+    }
+
+    /// <summary>Field number for the "MyDouble" field.</summary>
+    public const int MyDoubleFieldNumber = 1;
+    private double myDouble_;
+    /// <summary>
+    ///double数据类型
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double MyDouble {
+      get { return myDouble_; }
+      set {
+        myDouble_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyFloat" field.</summary>
+    public const int MyFloatFieldNumber = 2;
+    private float myFloat_;
+    /// <summary>
+    ///是的爽肤水
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float MyFloat {
+      get { return myFloat_; }
+      set {
+        myFloat_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyInt32" field.</summary>
+    public const int MyInt32FieldNumber = 3;
+    private int myInt32_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int MyInt32 {
+      get { return myInt32_; }
+      set {
+        myInt32_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyUint32" field.</summary>
+    public const int MyUint32FieldNumber = 4;
+    private uint myUint32_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MyUint32 {
+      get { return myUint32_; }
+      set {
+        myUint32_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyUint64" field.</summary>
+    public const int MyUint64FieldNumber = 5;
+    private ulong myUint64_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong MyUint64 {
+      get { return myUint64_; }
+      set {
+        myUint64_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyBool" field.</summary>
+    public const int MyBoolFieldNumber = 6;
+    private bool myBool_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MyBool {
+      get { return myBool_; }
+      set {
+        myBool_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MyString" field.</summary>
+    public const int MyStringFieldNumber = 7;
+    private string myString_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MyString {
+      get { return myString_; }
+      set {
+        myString_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "MyBytes" field.</summary>
+    public const int MyBytesFieldNumber = 8;
+    private pb::ByteString myBytes_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString MyBytes {
+      get { return myBytes_; }
+      set {
+        myBytes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "MyStringList" field.</summary>
+    public const int MyStringListFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _repeated_myStringList_codec
+        = pb::FieldCodec.ForString(74);
+    private readonly pbc::RepeatedField<string> myStringList_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> MyStringList {
+      get { return myStringList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PbTest1);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PbTest1 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(MyDouble, other.MyDouble)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MyFloat, other.MyFloat)) return false;
+      if (MyInt32 != other.MyInt32) return false;
+      if (MyUint32 != other.MyUint32) return false;
+      if (MyUint64 != other.MyUint64) return false;
+      if (MyBool != other.MyBool) return false;
+      if (MyString != other.MyString) return false;
+      if (MyBytes != other.MyBytes) return false;
+      if(!myStringList_.Equals(other.myStringList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MyDouble != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(MyDouble);
+      if (MyFloat != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MyFloat);
+      if (MyInt32 != 0) hash ^= MyInt32.GetHashCode();
+      if (MyUint32 != 0) hash ^= MyUint32.GetHashCode();
+      if (MyUint64 != 0UL) hash ^= MyUint64.GetHashCode();
+      if (MyBool != false) hash ^= MyBool.GetHashCode();
+      if (MyString.Length != 0) hash ^= MyString.GetHashCode();
+      if (MyBytes.Length != 0) hash ^= MyBytes.GetHashCode();
+      hash ^= myStringList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (MyDouble != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(MyDouble);
+      }
+      if (MyFloat != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(MyFloat);
+      }
+      if (MyInt32 != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(MyInt32);
+      }
+      if (MyUint32 != 0) {
+        output.WriteRawTag(32);
+        output.WriteUInt32(MyUint32);
+      }
+      if (MyUint64 != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(MyUint64);
+      }
+      if (MyBool != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(MyBool);
+      }
+      if (MyString.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(MyString);
+      }
+      if (MyBytes.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteBytes(MyBytes);
+      }
+      myStringList_.WriteTo(output, _repeated_myStringList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (MyDouble != 0D) {
+        size += 1 + 8;
+      }
+      if (MyFloat != 0F) {
+        size += 1 + 4;
+      }
+      if (MyInt32 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MyInt32);
+      }
+      if (MyUint32 != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MyUint32);
+      }
+      if (MyUint64 != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(MyUint64);
+      }
+      if (MyBool != false) {
+        size += 1 + 1;
+      }
+      if (MyString.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MyString);
+      }
+      if (MyBytes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(MyBytes);
+      }
+      size += myStringList_.CalculateSize(_repeated_myStringList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PbTest1 other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MyDouble != 0D) {
+        MyDouble = other.MyDouble;
+      }
+      if (other.MyFloat != 0F) {
+        MyFloat = other.MyFloat;
+      }
+      if (other.MyInt32 != 0) {
+        MyInt32 = other.MyInt32;
+      }
+      if (other.MyUint32 != 0) {
+        MyUint32 = other.MyUint32;
+      }
+      if (other.MyUint64 != 0UL) {
+        MyUint64 = other.MyUint64;
+      }
+      if (other.MyBool != false) {
+        MyBool = other.MyBool;
+      }
+      if (other.MyString.Length != 0) {
+        MyString = other.MyString;
+      }
+      if (other.MyBytes.Length != 0) {
+        MyBytes = other.MyBytes;
+      }
+      myStringList_.Add(other.myStringList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            MyDouble = input.ReadDouble();
+            break;
+          }
+          case 21: {
+            MyFloat = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            MyInt32 = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MyUint32 = input.ReadUInt32();
+            break;
+          }
+          case 40: {
+            MyUint64 = input.ReadUInt64();
+            break;
+          }
+          case 48: {
+            MyBool = input.ReadBool();
+            break;
+          }
+          case 58: {
+            MyString = input.ReadString();
+            break;
+          }
+          case 66: {
+            MyBytes = input.ReadBytes();
+            break;
+          }
+          case 74: {
+            myStringList_.AddEntriesFrom(input, _repeated_myStringList_codec);
             break;
           }
         }

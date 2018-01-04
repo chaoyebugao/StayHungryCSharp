@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SerAndDeSer
+namespace IOCUseGrace
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SerAndDeSer.UseGoogleProtobuf.GoogleProtoBufConvert.Exec();
         }
     }
 }

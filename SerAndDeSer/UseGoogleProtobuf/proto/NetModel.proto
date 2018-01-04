@@ -22,3 +22,17 @@ message NetResponse {     //定义一个类，用于响应客户端请求
 	string Message = 2;		//结果描述信息
 
 }
+
+//测试测试
+message PbTest1{
+	//double数据类型
+	double MyDouble = 1;
+	float MyFloat = 2;	//是的爽肤水
+	int32 MyInt32 = 3;
+	uint32 MyUint32 = 4;
+	uint64 MyUint64 = 5;
+	bool MyBool = 6;
+	string MyString = 7;
+	bytes MyBytes = 8;
+	repeated string MyStringList = 9;
+}

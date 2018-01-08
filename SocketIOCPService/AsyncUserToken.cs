@@ -6,12 +6,12 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocketIOCPService
+namespace SocketSAEA
 {
     /// <summary>
     /// 客户端信息
     /// </summary>
-    class AsyncUserToken
+    public class AsyncUserToken
     {
         /// <summary>
         /// 客户端IP地址

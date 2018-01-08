@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SocketIOCPService
+namespace SocketSAEA
 {
     /// <summary>
     /// 实现Socket监听,收发信息等
+    /// 参考：http://freshflower.iteye.com/blog/2285272
     /// </summary>
     class ServerSocketManager
     {

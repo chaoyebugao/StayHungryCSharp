@@ -5,12 +5,12 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocketIOCPService
+namespace SocketSAEA
 {
     /// <summary>
     /// 管理传输流的大小
     /// </summary>
-    class BufferManager
+    public class BufferManager
     {
         //Buffer池控制字节数总长度
         int numBytes;

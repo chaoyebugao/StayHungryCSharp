@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Grace\AspNetCore\Grace.AspNetCore.Hosting\Grace.AspNetCore.Hosting.csproj" />
+    <ProjectReference Include="..\Grace\AspNetCore\Grace.AspNetCore.MVC\Grace.AspNetCore.MVC.csproj" />
+    <ProjectReference Include="..\Grace\AspNetCore\Grace.DependencyInjection.Extensions\Grace.DependencyInjection.Extensions.csproj" />
+    <ProjectReference Include="..\Grace\Grace\Grace.csproj" />
+    <ProjectReference Include="..\IOCFramework.Dao\IOCFramework.Dao.csproj" />
+  </ItemGroup>
+
+</Project>

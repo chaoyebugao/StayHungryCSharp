@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SocketIOCPService
+namespace SocketSAEA
 {
     /// <summary>
     /// 管理SocketAsyncEventArgs的一个应用池. 有效地重复使用

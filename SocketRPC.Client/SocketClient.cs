@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SocketRPC.Client
+namespace SocketThreadBase.Client
 {
     class SocketClient
     {

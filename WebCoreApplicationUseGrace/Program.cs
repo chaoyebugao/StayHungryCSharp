@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplicationUseGrace
+namespace WebCoreApplicationUseGrace
 {
     public class Program
     {

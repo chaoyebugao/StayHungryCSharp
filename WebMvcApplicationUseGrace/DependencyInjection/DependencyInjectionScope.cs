@@ -1,20 +1,20 @@
-﻿using Grace.AspNetCore.MVC;
-using Grace.DependencyInjection;
+﻿using Grace.DependencyInjection;
 using IOCFramework.Dao.Repository;
 using IOCFramework.Dao.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace WebApplicationUseGrace
+namespace WebMvcApplicationUseGrace.DependencyInjection
 {
-    public partial class Startup
+    public class DependencyInjectionScope
     {
-        // 添加此方法
-        public void ConfigureContainer(IInjectionScope scope)
+        public static DependencyInjectionContainer GetContainer()
         {
-            scope.Configure(m =>
+            //容器
+            var container = new DependencyInjectionContainer();
+            container.Configure(m =>
             {
                 //这里演示如何简单注册同一个接口对应其实现
                 m.Export<AccountRepository>().As<IAccountRepository>();
@@ -29,7 +29,7 @@ namespace WebApplicationUseGrace
                 m.Export<UserService>().As<IUserService>().WithCtorParam<IUserRepository>().LocateWithKey("B");
             });
 
-            scope.SetupMvc();//这一句需先添加Grace.AspNetCore.MVC
+            return container;
         }
     }
 }

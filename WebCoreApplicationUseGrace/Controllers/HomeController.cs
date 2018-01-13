@@ -7,9 +7,9 @@ using Grace.DependencyInjection;
 using IOCFramework.Dao.Repository;
 using IOCFramework.Dao.Service;
 using Microsoft.AspNetCore.Mvc;
-using WebApplicationUseGrace.Models;
+using WebCoreApplicationUseGrace.Models;
 
-namespace WebApplicationUseGrace.Controllers
+namespace WebCoreApplicationUseGrace.Controllers
 {
     public class HomeController : Controller
     {
@@ -43,24 +43,6 @@ namespace WebApplicationUseGrace.Controllers
                 userSvcGet = userSvc.Get(),
             });
         }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WebApplicationUseGrace
+namespace WebCoreApplicationUseGrace
 {
     public partial class Startup
     {

@@ -48,7 +48,9 @@
     <Compile Include="Repository\UserRepositoryB.cs" />
     <Compile Include="Service\AccountService.cs" />
     <Compile Include="Service\IAccountService.cs" />
+    <Compile Include="Service\IMultipleConstructorImportService.cs" />
     <Compile Include="Service\IUserService.cs" />
+    <Compile Include="Service\MultipleConstructorImportService.cs" />
     <Compile Include="Service\UserService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

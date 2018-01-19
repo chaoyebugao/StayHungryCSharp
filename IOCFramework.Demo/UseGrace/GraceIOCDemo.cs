@@ -31,6 +31,8 @@ namespace IOCFramework.Demo.UseGrace
 
                 //这里演示依赖倒置而使用构造器带键值注入
                 m.Export<UserService>().As<IUserService>().WithCtorParam<IUserRepository>().LocateWithKey("B");
+                
+                m.Export<MultipleConstructorImportService>().As<IMultipleConstructorImportService>();
             });
 
             //获取简单注册实例
@@ -47,6 +49,11 @@ namespace IOCFramework.Demo.UseGrace
 
             var userSvc = container.Locate<IUserService>();//输出：Ctor param1:kkkkk
             Console.WriteLine(userSvc.Get());//输出：[User]键值注册调用B[Repo][Service]
+
+            Console.WriteLine();
+            //这里演示多个构造函数注入
+            var multipleConstructorImportSvc = container.Locate<IMultipleConstructorImportService>();
+            
         }
     }
 

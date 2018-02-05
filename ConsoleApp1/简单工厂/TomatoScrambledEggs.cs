@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.简单工厂
 {
-    /// <summary>
-    /// 简单工厂模式
-    /// 负责生产对象的一个类
-    /// </summary>
-    class SimpleFactory
+    class TomatoScrambledEggs : Food
     {
+        public override void Make()
+        {
+            Console.WriteLine("一份西红柿炒蛋");
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            建造者.ComputerBuilder.Exec();
         }
     }
 }

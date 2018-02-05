@@ -45,21 +45,22 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="单例\Singleton.cs" />
+    <Compile Include="单例\SingletonDemo.cs" />
     <Compile Include="原型\MonkeyConcreteType.cs" />
-    <Compile Include="原型\MonkeyKingCloner.cs" />
+    <Compile Include="原型\MonkeyKingClonerDemo.cs" />
     <Compile Include="原型\MonkeyKingPrototype.cs" />
     <Compile Include="工厂方法\Creator.cs" />
     <Compile Include="工厂方法\Food.cs" />
-    <Compile Include="工厂方法\FoodCreatorFactory.cs" />
+    <Compile Include="工厂方法\FoodCreatorFactoryDemo.cs" />
     <Compile Include="工厂方法\ShreddedPorkWithPotatoes.cs" />
     <Compile Include="工厂方法\TomatoScrambledEggs.cs" />
     <Compile Include="建造者\Builder.cs" />
     <Compile Include="建造者\Computer.cs" />
-    <Compile Include="建造者\ComputerBuilder.cs" />
+    <Compile Include="建造者\ComputerBuilderDemo.cs" />
     <Compile Include="建造者\ConcreteBuilder1.cs" />
     <Compile Include="建造者\Director.cs" />
     <Compile Include="抽象工厂\Creator.cs" />
-    <Compile Include="抽象工厂\FoodAbstractFactory.cs" />
+    <Compile Include="抽象工厂\FoodAbstractFactoryDemo.cs" />
     <Compile Include="抽象工厂\NanChangFactory.cs" />
     <Compile Include="抽象工厂\ShanghaiFactory.cs" />
     <Compile Include="抽象工厂\ShanghaiYaBo.cs" />
@@ -69,13 +70,13 @@
     <Compile Include="抽象工厂\YaBo.cs" />
     <Compile Include="抽象工厂\YaJia.cs" />
     <Compile Include="简单工厂\Food.cs" />
-    <Compile Include="简单工厂\FoodSimpleFactory.cs" />
+    <Compile Include="简单工厂\FoodSimpleFactoryDemo.cs" />
     <Compile Include="简单工厂\ShreddedPorkWithPotatoes.cs" />
     <Compile Include="简单工厂\TomatoScrambledEggs.cs" />
     <Compile Include="适配器\ThreeHole.cs" />
     <Compile Include="适配器\TwoHole.cs" />
     <Compile Include="适配器\PowerAdapter.cs" />
-    <Compile Include="适配器\SocketAdapter.cs" />
+    <Compile Include="适配器\SocketAdapterDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

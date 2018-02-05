@@ -11,7 +11,7 @@ namespace ConsoleApp1.工厂方法
     /// 工厂方法模式
     /// 每个Food创建自己的工厂，创建自己的实例
     /// </summary>
-    class FoodCreatorFactory
+    class FoodCreatorFactoryDemo
     {
         public static void Exec()
         {

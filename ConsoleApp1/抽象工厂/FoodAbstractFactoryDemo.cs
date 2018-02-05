@@ -10,7 +10,7 @@ namespace ConsoleApp1.抽象工厂
     /// 抽象工厂模式
     /// 抽象工厂提供创建一系列产品的接口
     /// </summary>
-    class FoodAbstractFactory
+    class FoodAbstractFactoryDemo
     {
         public static void Exec()
         {

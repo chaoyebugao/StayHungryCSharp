@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.单例
 {
-    class Program
+    class SingletonDemo
     {
-        static void Main(string[] args)
+        public static void Exec()
         {
-            建造者.ComputerBuilderDemo.Exec();
+            var s = Singleton.GetSingleton();
         }
     }
 }

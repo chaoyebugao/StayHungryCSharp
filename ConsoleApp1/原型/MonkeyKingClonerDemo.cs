@@ -10,7 +10,7 @@ namespace ConsoleApp1.原型
     /// 原型模式
     /// 从已有实例拷贝（如ICloneable接口实现）
     /// </summary>
-    class MonkeyKingCloner
+    class MonkeyKingClonerDemo
     {
         public static void Exec()
         {

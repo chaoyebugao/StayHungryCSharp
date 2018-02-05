@@ -10,7 +10,7 @@ namespace ConsoleApp1.简单工厂
     /// 简单工厂模式
     /// 负责生产对象的一个类
     /// </summary>
-    class FoodSimpleFactory
+    class FoodSimpleFactoryDemo
     {
         public static Food Make(string foodName)
         {

@@ -10,7 +10,7 @@ namespace ConsoleApp1.适配器
     /// 适配器模式
     /// 新环境中不需要去重复实现已经存在了的实现而很好地把现有对象（指原来环境中的现有对象）加入到新环境来使用
     /// </summary>
-    class SocketAdapter
+    class SocketAdapterDemo
     {
         public static void Exec()
         {

@@ -49,6 +49,7 @@
     <Compile Include="List泛型排序\ListSort.cs" />
     <Compile Include="Ref\UseRef.cs" />
     <Compile Include="构造函数\静态和实例构造函数并存.cs" />
+    <Compile Include="参数数组\ParamsArray.cs" />
     <Compile Include="枚举的First或Find返回来的是引用\ListGetOneTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -126,7 +126,7 @@ namespace ConsoleApplication1.对象比较
             Console.WriteLine(m1 == m2);//False
             Console.WriteLine(m1.GetHashCode());//32076894
             Console.WriteLine(m2.GetHashCode());//32076894
-            Console.WriteLine(m1.Equals(m2));//True
+            Console.WriteLine(m1.Equals(m2));//True //这个运行时有优化，会比较内部成员是否一致，一致则True
             Console.WriteLine(System.Object.ReferenceEquals(m1, m2));//False
         }
     }

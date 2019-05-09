@@ -48,6 +48,7 @@
     <Compile Include="Byte和Int运算\ByteAndInt.cs" />
     <Compile Include="List泛型排序\ListSort.cs" />
     <Compile Include="Ref\UseRef.cs" />
+    <Compile Include="构造函数\静态和实例构造函数并存.cs" />
     <Compile Include="枚举的First或Find返回来的是引用\ListGetOneTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="特性\特性参数.cs" />
     <Compile Include="继承\PrintField.cs" />
     <Compile Include="继承\TheSalaryProblem.cs" />
+    <Compile Include="继承\New和Override不同.cs" />
     <Compile Include="自增\SelfPlus.cs" />
     <Compile Include="装箱拆箱\BoxUnbox.cs" />
     <Compile Include="访问权限\ProtectedInternal.cs" />

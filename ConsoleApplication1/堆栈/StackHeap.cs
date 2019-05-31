@@ -37,6 +37,7 @@ namespace ConsoleApplication1.堆栈
             //m2 = 3000;
 
             Console.WriteLine("ref hash, m1:{0}, m2:{1}", m1.GetHashCode(), m2.GetHashCode());
+            //输出：ref hash, i:3434, obj:3434
         }
 
         public static void Exec3()

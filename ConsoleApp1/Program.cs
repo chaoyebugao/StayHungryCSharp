@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            建造者.ComputerBuilderDemo.Exec();
+            //ConsoleApplication1.对象比较.
         }
     }
 }

@@ -16,11 +16,11 @@ namespace ConsoleApplication1.对象比较
             //IntEq();
             //ObjEq();
             //IntAssignmentEq();
-            //ObjValEq();
+            ObjValEq();
             //StrEq();
             //RefEq();
             //RefAssignmentEq();
-            AnoEq();
+            //AnoEq();
         }
 
         public static void IntEq()
@@ -59,6 +59,7 @@ namespace ConsoleApplication1.对象比较
             int m2 = 2;
 
             Console.WriteLine(m1.Equals(m2));//Object虚方法值比较True
+            Console.WriteLine(m2.Equals(m1));//Object虚方法值比较True
             Console.WriteLine(System.Object.ReferenceEquals(m1, m2));//引用False
         }
 

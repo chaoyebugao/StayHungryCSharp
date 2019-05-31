@@ -1,4 +1,7 @@
-﻿using ConsoleApplication1.构造函数;
+﻿using ConsoleApplication1.Str作为参数被处理后;
+using ConsoleApplication1.堆栈;
+using ConsoleApplication1.对象比较;
+using ConsoleApplication1.构造函数;
 using ConsoleApplication1.继承;
 using System;
 using System.Collections;
@@ -14,11 +17,7 @@ namespace ConsoleApplication1
     {
         public static void Main()
         {
-            New和Override不同.Exec();
-
-
-
-
+            IHelloSayHello问题.Exec();
 
 
         }

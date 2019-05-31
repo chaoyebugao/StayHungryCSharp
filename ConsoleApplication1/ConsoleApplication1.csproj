@@ -69,6 +69,7 @@
     <Compile Include="整数交换\IntExt.cs" />
     <Compile Include="构造函数\ConstructorTest.cs" />
     <Compile Include="特性\特性参数.cs" />
+    <Compile Include="继承\IHelloSayHello问题.cs" />
     <Compile Include="继承\PrintField.cs" />
     <Compile Include="继承\TheSalaryProblem.cs" />
     <Compile Include="继承\New和Override不同.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="装箱拆箱\BoxUnbox.cs" />
     <Compile Include="访问权限\ProtectedInternal.cs" />
     <Compile Include="访问权限\ProtectedInternalBase.cs" />
+    <Compile Include="资源回收\Seed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

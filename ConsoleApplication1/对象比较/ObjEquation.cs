@@ -16,9 +16,9 @@ namespace ConsoleApplication1.对象比较
             //IntEq();
             //ObjEq();
             //IntAssignmentEq();
-            ObjValEq();
+            //ObjValEq();
             //StrEq();
-            //RefEq();
+            RefEq();
             //RefAssignmentEq();
             //AnoEq();
         }

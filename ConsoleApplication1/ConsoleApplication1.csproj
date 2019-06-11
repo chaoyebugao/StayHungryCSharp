@@ -48,6 +48,7 @@
     <Compile Include="Byte和Int运算\ByteAndInt.cs" />
     <Compile Include="List泛型排序\ListSort.cs" />
     <Compile Include="Ref\UseRef.cs" />
+    <Compile Include="对象比较\字符串处理.cs" />
     <Compile Include="构造函数\静态和实例构造函数并存.cs" />
     <Compile Include="参数数组\ParamsArray.cs" />
     <Compile Include="枚举的First或Find返回来的是引用\ListGetOneTest.cs" />
@@ -61,7 +62,7 @@
     <Compile Include="单向链\Node.cs" />
     <Compile Include="单向链\SingleWayChain.cs" />
     <Compile Include="堆栈\StackHeap.cs" />
-    <Compile Include="字符串长度\Class1.cs" />
+    <Compile Include="字符串长度\字符串长度计算.cs" />
     <Compile Include="实例中的static\StaticObjOfInstance.cs" />
     <Compile Include="对象比较\ObjEquation.cs" />
     <Compile Include="序列化反序列化\MarshalConvert.cs" />

@@ -10,8 +10,11 @@ namespace ConsoleApplication1.继承
     {
         public static void Exec()
         {
-            var r1 = new MyHello();
-            r1.SayHello();  //输出：Base!
+            MyHello r1 = new MyHello();
+            r1.SayHello();  //输出：Base
+
+            IHello r2 = new MyHello();
+            r2.SayHello();  //输出：MyHello
         }
     }
 
@@ -24,7 +27,7 @@ namespace ConsoleApplication1.继承
     {
         public void SayHello()
         {
-            Console.WriteLine("Base!");
+            Console.WriteLine("Base");
         }
     }
 

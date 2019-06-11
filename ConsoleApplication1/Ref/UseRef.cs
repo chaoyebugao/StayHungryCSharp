@@ -27,11 +27,11 @@ namespace ConsoleApplication1.Ref
                 Name = "张三3",
             };
 
-            //ChangeName1(p1);
-            //Console.WriteLine(p1.Name);
+            ChangeName1(p1);
+            Console.WriteLine(p1.Name); //cn1
 
             ChangeName2(ref p2);
-            Console.WriteLine(p2.Name);
+            Console.WriteLine(p2.Name); //cn2
         }
 
         private static void ChangeName1(Person p)

@@ -39,8 +39,8 @@ namespace ConsoleApplication1.继承
         public static void Exec()
         {
             ManagerSalary ms = new ManagerSalary();
-            ms.SetSalary(new Employee());
-            ms.SetSalary(new Manager());
+            ms.SetSalary(new Employee());   //Employee被设置了薪水
+            ms.SetSalary(new Manager());    //Manager被设置了薪水
         }
     }
 

@@ -11,9 +11,10 @@ namespace ConsoleApplication1.自增
         public static void Exec()
         {
             var i1 = 5;
+            Console.WriteLine($"{++i1}");   //6，先计算i1 + 1，再返回
+
             var i2 = 5;
-            Console.WriteLine("i1:"+ (++i1));
-            Console.WriteLine("i2:" + (i2++));
+            Console.WriteLine($"{i2++}");  //5，先返回返回i2，再计算i2 + 1
         }
     }
 }

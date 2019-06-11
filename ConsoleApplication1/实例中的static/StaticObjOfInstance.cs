@@ -11,12 +11,13 @@ namespace ConsoleApplication1.实例中的static
         public static void Exec()
         {
             SooI s1 = new SooI();
-            Console.WriteLine(s1.Ns);
-            Console.WriteLine(SooI.S1);
+            Console.WriteLine(s1.Ns);   //2
+            Console.WriteLine(SooI.S1); //3
+
             SooI.S1 = SooI.S1 + 100;
 
             SooI s2 = new SooI();
-            Console.WriteLine(SooI.S1);
+            Console.WriteLine(SooI.S1); //103
         }
     }
 

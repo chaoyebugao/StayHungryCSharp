@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AsyncAndThreading.多线程.任务;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace AsyncAndThreading
     {
         static void Main(string[] args)
         {
-            IAsyncResult接口.AsyncDemo.Exec();
+            Task等待.Exec().Wait();
         }
     }
 }

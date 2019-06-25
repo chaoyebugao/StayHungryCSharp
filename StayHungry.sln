@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Socket", "Socket", "{C23B6064-06EC-4CD4-8498-8D9BCB9709B4}"
 EndProject
@@ -93,13 +93,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "分布式", "分布式", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orleans", "Orleans", "{374F73F7-52FF-42FB-831F-583665213C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShOrleans.Host", "ShOrleans.Host\ShOrleans.Host.csproj", "{000BE3E4-1853-45CD-BBA3-E01DC9012C5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShOrleans.Host", "ShOrleans.Host\ShOrleans.Host.csproj", "{000BE3E4-1853-45CD-BBA3-E01DC9012C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShOrleans.Grain", "ShOrleans.Grain\ShOrleans.Grain.csproj", "{382C7FC3-6BEA-4EA1-9128-AFDED01DA9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShOrleans.Grain", "ShOrleans.Grain\ShOrleans.Grain.csproj", "{382C7FC3-6BEA-4EA1-9128-AFDED01DA9A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShOrleans.Client", "ShOrleans.Client\ShOrleans.Client.csproj", "{D01472E5-9489-44C4-B4A3-78EE9A6DBB76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShOrleans.Client", "ShOrleans.Client\ShOrleans.Client.csproj", "{D01472E5-9489-44C4-B4A3-78EE9A6DBB76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShOrleans.IGrain", "ShOrleans.IGrain\ShOrleans.IGrain.csproj", "{64AEEFDC-73CB-4280-8708-8B03E2E386E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShOrleans.IGrain", "ShOrleans.IGrain\ShOrleans.IGrain.csproj", "{64AEEFDC-73CB-4280-8708-8B03E2E386E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grpc流式与并发测试", "Grpc流式与并发测试", "{24CA4C6A-12A2-4073-86F9-0C3477B10F6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcTest.Utility", "GrpcTest.Utility\GrpcTest.Utility.csproj", "{1C27995A-08C7-4132-9EB0-D061BBEAB38F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcTest.Service", "GrpcTest.Service\GrpcTest.Service.csproj", "{B6D6AC54-6BD6-481D-9908-A80D612B7704}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcTest.Client", "GrpcTest.Client\GrpcTest.Client.csproj", "{8E301049-4D59-42FC-851B-3F6DFFE8F50B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcTestServer", "GrpcTestServer\GrpcTestServer.csproj", "{6C124840-B597-45F8-A75A-46859D6B0B0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +229,22 @@ Global
 		{64AEEFDC-73CB-4280-8708-8B03E2E386E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64AEEFDC-73CB-4280-8708-8B03E2E386E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64AEEFDC-73CB-4280-8708-8B03E2E386E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C27995A-08C7-4132-9EB0-D061BBEAB38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C27995A-08C7-4132-9EB0-D061BBEAB38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C27995A-08C7-4132-9EB0-D061BBEAB38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C27995A-08C7-4132-9EB0-D061BBEAB38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D6AC54-6BD6-481D-9908-A80D612B7704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D6AC54-6BD6-481D-9908-A80D612B7704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D6AC54-6BD6-481D-9908-A80D612B7704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D6AC54-6BD6-481D-9908-A80D612B7704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E301049-4D59-42FC-851B-3F6DFFE8F50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E301049-4D59-42FC-851B-3F6DFFE8F50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E301049-4D59-42FC-851B-3F6DFFE8F50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E301049-4D59-42FC-851B-3F6DFFE8F50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C124840-B597-45F8-A75A-46859D6B0B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C124840-B597-45F8-A75A-46859D6B0B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C124840-B597-45F8-A75A-46859D6B0B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C124840-B597-45F8-A75A-46859D6B0B0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -260,6 +286,10 @@ Global
 		{382C7FC3-6BEA-4EA1-9128-AFDED01DA9A3} = {374F73F7-52FF-42FB-831F-583665213C8C}
 		{D01472E5-9489-44C4-B4A3-78EE9A6DBB76} = {374F73F7-52FF-42FB-831F-583665213C8C}
 		{64AEEFDC-73CB-4280-8708-8B03E2E386E2} = {374F73F7-52FF-42FB-831F-583665213C8C}
+		{1C27995A-08C7-4132-9EB0-D061BBEAB38F} = {24CA4C6A-12A2-4073-86F9-0C3477B10F6D}
+		{B6D6AC54-6BD6-481D-9908-A80D612B7704} = {24CA4C6A-12A2-4073-86F9-0C3477B10F6D}
+		{8E301049-4D59-42FC-851B-3F6DFFE8F50B} = {24CA4C6A-12A2-4073-86F9-0C3477B10F6D}
+		{6C124840-B597-45F8-A75A-46859D6B0B0A} = {24CA4C6A-12A2-4073-86F9-0C3477B10F6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CFEE2EE-95C5-409D-AF8D-281BEC811E6B}

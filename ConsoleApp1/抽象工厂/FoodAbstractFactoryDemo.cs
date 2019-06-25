@@ -9,6 +9,7 @@ namespace ConsoleApp1.抽象工厂
     /// <summary>
     /// 抽象工厂模式
     /// 抽象工厂提供创建一系列产品的接口
+    /// 要点：工厂抽象化、产品抽象化
     /// </summary>
     class FoodAbstractFactoryDemo
     {

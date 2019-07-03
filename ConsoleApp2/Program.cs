@@ -7,6 +7,11 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            
+
+            return;
+
+
             var i = 0;
             var errCount = 0;
 
@@ -27,6 +32,11 @@ namespace ConsoleApp2
             
             Console.WriteLine("执行完毕，错误:{errCount}");
             Console.ReadKey();
+        }
+
+        public enum Mask
+        {
+            Pipo
         }
     }
 }

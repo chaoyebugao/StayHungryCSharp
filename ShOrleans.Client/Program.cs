@@ -25,6 +25,9 @@ namespace ShOrleans.Client
                 using (var client = await ConnectClient())
                 {
                     await SayHello(client);
+
+                    PaySth(client);
+
                     Console.ReadKey();
                 }
 
@@ -61,6 +64,21 @@ namespace ShOrleans.Client
 
             var res = await friend.SayHello("雷猴");
             Console.WriteLine(res);
+        }
+
+        private static Task PaySth(IClusterClient client)
+        {
+            var person = client.GetGrain<IPerson>(2265);
+
+            person.PaySthAsync().ContinueWith(t =>
+            {
+                var totalMoney = t.Result;
+                Console.WriteLine($"买完了，我的钱还剩：{totalMoney}");
+            });
+
+            
+
+            return Task.CompletedTask;
         }
         
     }

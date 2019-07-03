@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Grpc.Core;
 using Grpc.Service.Model.ExecuteResult;
@@ -34,6 +35,7 @@ namespace GrpcTestServer.Implementations
                 ErrCode = GrpcTest.Services.Enumeration.ErrorCodes.Success,
                 ErrMsg = "sdsd",
             };
+
             return Task.FromResult(ret);
         }
 

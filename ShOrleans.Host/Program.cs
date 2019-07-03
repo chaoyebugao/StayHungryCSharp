@@ -41,6 +41,7 @@ namespace ShOrleans.Host
         {
             var builder = new SiloHostBuilder()
                 .UseLocalhostClustering()
+                .AddMemoryGrainStorage("DevStore")
                 .Configure<ClusterOptions>(opts =>
                 {
                     opts.ClusterId = "dev";
@@ -53,6 +54,7 @@ namespace ShOrleans.Host
                 .ConfigureApplicationParts(p =>
                 {
                     p.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences();
+                    p.AddApplicationPart(typeof(PersonGrain).Assembly).WithReferences();
                 });
 
             var host = builder.Build();
